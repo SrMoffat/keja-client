@@ -30,6 +30,7 @@ class SplashScreen extends StatelessWidget {
               ),
             ),
           ),
+          // TODO: Factor out into separate widget
           Column(
             children: <Widget>[
               Expanded(
