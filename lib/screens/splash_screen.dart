@@ -22,8 +22,8 @@ class SplashScreen extends StatelessWidget {
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: NetworkImage(
-                    'https://images.unsplash.com/photo-1515263487990-61b07816b324?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+                  image: AssetImage(
+                    'assets/images/background-banner.jpg',
                   ),
                   fit: BoxFit.cover,
                 ),
@@ -39,15 +39,6 @@ class SplashScreen extends StatelessWidget {
                     alignment: FractionalOffset(0.5, 0.0),
                     child: Container(
                       margin: EdgeInsets.only(top: 110.0),
-                      decoration: BoxDecoration(
-                        // boxShadow: [
-                        //   BoxShadow(
-                        //     color: Colors.grey[600],
-                        //     blurRadius: 80.0,
-                        //     spreadRadius: 0,
-                        //   ),
-                        // ],
-                      ),
                       child: Image.asset('assets/images/logo.png'),
                     ),
                   ),
@@ -58,7 +49,7 @@ class SplashScreen extends StatelessWidget {
                 child: Container(
                   margin: EdgeInsets.only(bottom: 28.0),
                   child: Text(
-                    'Live and Rent Smartly',
+                    'Rent Smarter, Live Easier',
                     style: TextStyle(
                       fontSize: 18.0,
                       fontWeight: FontWeight.bold,
