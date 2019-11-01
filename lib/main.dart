@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import './screens/splash_screen.dart';
+// import './screens/splash_screen.dart';
+import './screens/signup_screen.dart';
 
 void main() => runApp(App());
 
@@ -15,7 +16,8 @@ class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: SplashScreen(),
+      // home: SplashScreen(),
+      home: SignUpScreen()
     );
   }
 }
