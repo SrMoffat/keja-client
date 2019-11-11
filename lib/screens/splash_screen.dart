@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:keja/screens/verify_number_screen.dart';
 
 class SplashScreen extends StatelessWidget {
   final Color gradientStart = Colors.transparent;
@@ -16,7 +17,7 @@ class SplashScreen extends StatelessWidget {
                 end: Alignment.bottomCenter,
                 colors: [gradientStart, gradientEnd],
               ).createShader(
-                  Rect.fromLTRB(0, -140, rect.width, rect.height - 20));
+                  Rect.fromLTRB(0, -140, rect.width, rect.height-20));
             },
             blendMode: BlendMode.darken,
             child: Container(
@@ -69,23 +70,28 @@ class SplashScreen extends StatelessWidget {
                   minWidth: 320.0,
                   height: 50.0,
                   child: RaisedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      print("pressed");
+                      Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => 
+                          PhoneVerification()
+                        ));
+                    },
                     textColor: Color(0xff00B074),
                     color: Colors.white,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
                     ),
                     child: Container(
-                      child: Text(
-                        'Sign Up',
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
+                        child: Text(
+                          'Sign Up',
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          textAlign: TextAlign.center,
                         ),
-                        textAlign: TextAlign.center,
                       ),
-                    ),
-                  ),
+                  )
                 ),
                 flex: 0,
               ),
