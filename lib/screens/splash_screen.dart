@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/splash-screen/splash-screen-shader.dart';
-import '../widgets/splash-screen/splash-screen-banner.dart';
-import '../widgets/splash-screen/splash-screen-caption.dart';
-import '../widgets/splash-screen/splash-screen-signup-btn.dart';
-import '../widgets/splash-screen/splash-screen-google-btn.dart';
-import '../widgets/splash-screen/splash-screen-login-btn.dart';
+import '../widgets/splash-screen/shader.dart';
+import '../widgets/splash-screen/banner.dart';
+import '../widgets/splash-screen/caption.dart';
+import '../widgets/splash-screen/signup-btn.dart';
+import '../widgets/splash-screen/google-btn.dart';
+import '../widgets/splash-screen/login-btn.dart';
 
 class SplashScreen extends StatelessWidget {
   final Color gradientStart = Colors.transparent;
