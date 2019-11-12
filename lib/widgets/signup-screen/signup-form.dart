@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/signup-form-clip-path.dart';
+import './signup-form-clip-path.dart';
 
 class SignUpForm extends StatefulWidget {
   @override
