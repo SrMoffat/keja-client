@@ -22,7 +22,7 @@ class _PhoneVerificationState extends State<PhoneVerification> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green[100],
+      backgroundColor: Color(0xFFCCDBD6) ,
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
@@ -42,18 +42,20 @@ class _PhoneVerificationState extends State<PhoneVerification> {
               ),
             ),
             Container(
-              width: MediaQuery.of(context).size.width - 60,
+              width: MediaQuery.of(context).size.width - 94,
               decoration: BoxDecoration(),
               child: Card(
-                color: Colors.blueGrey[100],
+                color: Color(0xFFF3F3F3),
                 elevation: 2,
                 child: Padding(
                   padding: const EdgeInsets.all(30.0),
                   child: Column(
                     children: <Widget>[
                       Text(
-                        "Verify your phone number",
-                        style: TextStyle(fontSize: 18, color: Colors.black87),
+                        "Verify Your Phone Number",
+                        style: TextStyle(fontSize: 18, color: Color(0xFF787878),
+                        fontFamily: "Margarine"
+                        ),
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(
@@ -62,6 +64,7 @@ class _PhoneVerificationState extends State<PhoneVerification> {
                           controller: _controller,
                           keyboardType: TextInputType.number,
                           maxLength: 9,
+
                           inputFormatters: <TextInputFormatter>[
                                WhitelistingTextInputFormatter.digitsOnly
                            ],
@@ -76,21 +79,37 @@ class _PhoneVerificationState extends State<PhoneVerification> {
                       ),
                       Text(
                         "We will send a four digit code on this number to verify your account ",
-                        style: TextStyle(color: Colors.black54),
+                        style: TextStyle(
+                          color: Color(0xFFA3A3A3),
+                          fontFamily: 'Lato'
+                          ),
                       ),
                       SizedBox(
                         height: 20,
                       ),
                       InkWell(
+                        onTap: (){
+                          print(_controller.text);
+                        },
                         child: FractionallySizedBox(
                             widthFactor: 0.8,
-                            child: Container(
-                                alignment: Alignment.center,
-                                height: 30,
-                                decoration: BoxDecoration(
-                                    color: Colors.green,
-                                    borderRadius: BorderRadius.circular(4)),
-                                child: Text("continue"))),
+                            child: Card(
+
+                              elevation: 5,
+                                                          child: Container(
+                                  alignment: Alignment.center,
+                                  height: 30,
+                                  decoration: BoxDecoration(
+                                      color: Color(0xFF00C280),
+                                      borderRadius: BorderRadius.circular(3),
+                                      ),
+
+                                  child: Text("Continue",style: TextStyle(
+                                    color: Colors.white,
+                                    fontFamily: 'Manjari'
+
+                                  ),)),
+                            )),
                       )
                     ],
                   ),
