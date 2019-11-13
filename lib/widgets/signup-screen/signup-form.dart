@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 
 import './signup-form-clip-path.dart';
 
+import '../signup-form/title.dart';
+import '../signup-form/input.dart';
+
 class SignUpForm extends StatefulWidget {
   @override
   _SignUpFormState createState() => _SignUpFormState();
@@ -32,23 +35,15 @@ class _SignUpFormState extends State<SignUpForm> {
                       key: _formKey,
                       child: Column(
                         children: <Widget>[
-                          Text(
-                            'Sign Up',
-                            style: TextStyle(
-                              fontSize: 20,
-                            ),
+                          FormTitle(
+                            title: 'Sign Up',
                           ),
                           SizedBox(
                             height: 20.0,
                           ),
-                          TextFormField(
+                          InputField(
+                            fieldLabel: 'Username',
                             onSaved: (value) => _username = value,
-                            decoration: InputDecoration(
-                              labelText: 'Username',
-                              labelStyle: TextStyle(
-                                color: Color(0xff00B074),
-                              ),
-                            ),
                           ),
                           SizedBox(
                             height: 20.0,
