@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:keja/screens/verify_number_screen.dart';
+import '../screens/registration_screen.dart';
 
 class SplashScreen extends StatelessWidget {
   final Color gradientStart = Colors.transparent;
@@ -73,7 +73,7 @@ class SplashScreen extends StatelessWidget {
                     onPressed: () {
                       print("pressed");
                       Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => 
-                          PhoneVerification()
+                          RegistrationForm(),
                         ));
                     },
                     textColor: Color(0xff00B074),

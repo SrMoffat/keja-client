@@ -22,7 +22,7 @@ class _PhoneVerificationState extends State<PhoneVerification> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFCCDBD6),
+      backgroundColor: Colors.green[400],
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
@@ -52,7 +52,7 @@ class _PhoneVerificationState extends State<PhoneVerification> {
               decoration: BoxDecoration(),
               child: Card(
                 color: Color(0xFFF3F3F3),
-                elevation: 2,
+                elevation: 6,
                 child: Padding(
                   padding: const EdgeInsets.all(30.0),
                   child: Column(
