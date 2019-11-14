@@ -7,6 +7,7 @@ import '../widgets/splash-screen/signup-btn.dart';
 import '../widgets/splash-screen/google-btn.dart';
 import '../widgets/splash-screen/login-btn.dart';
 
+
 class SplashScreen extends StatelessWidget {
   final Color gradientStart = Colors.transparent;
   final Color gradientEnd = Color(0xff002116);
