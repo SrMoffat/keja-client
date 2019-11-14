@@ -16,6 +16,11 @@ class _AppState extends State<App> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: SplashScreen(),
+      theme: ThemeData(
+        primaryColor: Colors.green[400],
+        accentColor: Colors.yellow,
+        errorColor: Colors.red,
+      ),
     );
   }
 }
