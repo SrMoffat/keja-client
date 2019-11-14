@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class InputField extends StatelessWidget {
-  final bool obscureText;
+  final bool hideText;
   final TextInputType keyboardType;
   final Function onSaved;
   final String fieldLabel;
@@ -9,15 +9,15 @@ class InputField extends StatelessWidget {
   InputField({
     @required this.fieldLabel,
     @required this.onSaved,
-    this.obscureText,
+    this.hideText,
     this.keyboardType
   });
-
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       onSaved: onSaved,
+      keyboardType: keyboardType,
       decoration: InputDecoration(
         labelText: fieldLabel,
         labelStyle: TextStyle(

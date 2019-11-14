@@ -40,29 +40,18 @@ class _SignUpFormState extends State<SignUpForm> {
                           FormTitle(
                             title: 'Sign Up',
                           ),
-                          SizedBox(
-                            height: 20.0,
-                          ),
+                          SizedBox(height: 20.0),
                           InputField(
                             fieldLabel: 'Username',
                             onSaved: (value) => _username = value,
                           ),
-                          SizedBox(
-                            height: 20.0,
-                          ),
-                          TextFormField(
+                          SizedBox(height: 20.0),
+                          InputField(
+                            fieldLabel: 'Email',
                             onSaved: (value) => _email = value,
                             keyboardType: TextInputType.emailAddress,
-                            decoration: InputDecoration(
-                              labelText: 'Email',
-                              labelStyle: TextStyle(
-                                color: Color(0xff00B074),
-                              ),
-                            ),
                           ),
-                          SizedBox(
-                            height: 20.0,
-                          ),
+                          SizedBox(height: 20.0),
                           TextFormField(
                             onSaved: (value) => _password = value,
                             obscureText: true,
@@ -73,9 +62,7 @@ class _SignUpFormState extends State<SignUpForm> {
                               ),
                             ),
                           ),
-                          SizedBox(
-                            height: 20.0,
-                          ),
+                          SizedBox(height: 20.0),
                           RaisedButton(
                             child: Text('Sign Up'),
                             textColor: Colors.white,
