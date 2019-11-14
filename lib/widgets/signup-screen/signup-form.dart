@@ -5,6 +5,8 @@ import './signup-form-clip-path.dart';
 import '../signup-form/title.dart';
 import '../signup-form/input.dart';
 
+import '../../screens/verify_number_screen.dart';
+
 class SignUpForm extends StatefulWidget {
   @override
   _SignUpFormState createState() => _SignUpFormState();
@@ -85,6 +87,13 @@ class _SignUpFormState extends State<SignUpForm> {
                               if (form.validate()) {
                                 print("$_username $_email $_password");
                               }
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      PhoneVerification(),
+                                ),
+                              );
                             },
                           ),
                         ],
