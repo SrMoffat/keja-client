@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:keja/screens/verify_code_screen.dart';
+import 'package:keja/screens/verify_code_screen.dart' as prefix0;
 
 TextEditingController controller = TextEditingController();
 
@@ -102,6 +104,7 @@ class _PhoneVerificationState extends State<PhoneVerification> {
                       InkWell(
                         onTap: () {
                           print(_controller.text);
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>prefix0.CodeVerification()));
                         },
                         child: FractionallySizedBox(
                           widthFactor: 0.8,
