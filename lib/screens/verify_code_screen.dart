@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:keja/screens/list_properties.dart';
 
 TextEditingController controller = TextEditingController();
 
@@ -163,6 +164,8 @@ class _CodeVerificationState extends State<CodeVerification> {
                       InkWell(
                         onTap: () {
                           print(_controller.text);
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => PropertiesPage()));
+
                         },
                         child: FractionallySizedBox(
                           widthFactor: 0.8,
