@@ -38,6 +38,7 @@ class PropertiesPage extends StatelessWidget {
                     padding: const EdgeInsets.only(top:20),
                     child: Text("Find a perfect home nearby",style: TextStyle(color: Colors.white,fontSize: 14),),
                   ),
+                  
                   Row(
                     children: [
                       Text("Rent"),
