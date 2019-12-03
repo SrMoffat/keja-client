@@ -41,8 +41,8 @@ flutter:
   uses-material-design: true
 
   assets:
-   - assets/images/logo.png
-   - assets/images/background-banner.jpg
+   - assets/images/
+   
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -65,6 +65,9 @@ flutter:
     - family: Lato
       fonts:
         - asset: assets/fonts/Lato-Regular.ttf
+    - family:  KejaClientSvg
+      fonts:
+        - asset: assets/fonts/KejaClientSvg.ttf
 
 
 
