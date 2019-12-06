@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:keja/widgets/properties.dart';
 import 'package:keja/customfonts/keja_client_svg_icons.dart';
 
-
-
 class PropertiesPage extends StatelessWidget {
   const PropertiesPage({Key key}) : super(key: key);
 
@@ -29,10 +27,8 @@ class PropertiesPage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           Icon(
-                            KejaClientSvg.grouphome,
+                            Icons.list,
                             color: Colors.white,
-                            
-                            
                             size: 40,
                           ),
                           Container(
@@ -99,7 +95,10 @@ class PropertiesPage extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Text("Featured Properties"),
+                      Text("Featured Properties", style: TextStyle(
+                          fontSize: 14,
+                          color: Color(0xFFA2A2A2),
+                          ),),
                       Container(
                         height: 231,
                         child: ListView.builder(
@@ -107,12 +106,22 @@ class PropertiesPage extends StatelessWidget {
                           itemCount: 10,
                           itemBuilder: (BuildContext context, int index) {
                             return Padding(
-                              padding: const EdgeInsets.only(left:10.0),
+                              padding: const EdgeInsets.only(left: 10.0),
                               child: FeaturedPropertyCard(),
                             );
                           },
                         ),
-                      )
+                      ),
+                      SizedBox(
+                        height: 18,
+                      ),
+                      Text(
+                        "New Rentals In Nairobi",
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Color(0xFFA2A2A2),
+                          ),
+                      ),
                     ],
                   ),
                 ),
